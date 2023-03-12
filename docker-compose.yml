@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  auto:
+    image: auto
+    restart: always
+    volumes:
+      - .:/var/app
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "1m"
